@@ -1,22 +1,39 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-     
-      Login
+     Login  
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div id="container">
+        <br>
+        <div id="Ola">
+          <ion-text color="warning">Olá, seja bem vindo a <strong>Lojas UAM</strong></ion-text>
+        </div>
+  
+        <br>
+        <br>
+        <br>
+        
+        <ion-item>
+        <ion-icon name="person-outline" slot="start"></ion-icon>
+        <ion-input placeholder="Usuário"></ion-input>
+        
+        </ion-item>
+        <br>
+        <br>
+        <ion-item>
+          <ion-icon name="key-outline" slot="start"></ion-icon>
+        <ion-input placeholder="Senha" type="password"></ion-input>
+        </ion-item>
+        <div id="entrar">
+        <ion-button><a href="home">Entrar</a></ion-button>
 
-  <div id="container">
-   <br><br><br><br>Usuário:
-   <br> 
-   Senha: 123s
+      </div>
+    <div id="esqueceu">
+      <ion-text color="secondary">Esqueceu sua senha?</ion-text>
+    </div>
   </div>
 </ion-content>
