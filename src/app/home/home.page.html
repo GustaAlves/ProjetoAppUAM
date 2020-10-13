@@ -1,16 +1,12 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title>
-     Login  
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
+<ion-content>
     <div id="container">
-        <br>
+      <br>
+      <div id="Foto1">
+        <img src="http://ci.eco.br/wp-content/uploads/2019/04/futurecraft_loop.jpg">
+      </div>
         <div id="Ola">
-          <ion-text color="warning">Olá, seja bem vindo a <strong>Lojas UAM</strong></ion-text>
+       
+          <strong>Lojas UAM</strong>
         </div>
   
         <br>
@@ -33,7 +29,7 @@
 
       </div>
     <div id="esqueceu">
-      <ion-text color="secondary">Esqueceu sua senha?</ion-text>
+      <a (click)="alerta1()">Esqueceu sua senha?</a>
     </div>
   </div>
 </ion-content>
