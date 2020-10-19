@@ -9,6 +9,10 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
+        path: 'sobre',
+        loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+      },
+      {
         path: 'loja',
         loadChildren: () => import('./loja/loja.module').then( m => m.LojaPageModule)
       },
@@ -28,7 +32,8 @@ const routes: Routes = [
 
     ]
     
-  },  {
+  },
+  {
     path: 'sobre',
     loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
   }
