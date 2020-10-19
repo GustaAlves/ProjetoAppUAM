@@ -8,6 +8,10 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'sobre',
+    loadChildren: () => import('./home/sobre/sobre.module').then( m => m.SobrePageModule)
+  },
+  {
     path: 'valida',
     loadChildren: () => import('./home/valida/valida.module').then( m => m.ValidaPageModule)
   },
