@@ -27,7 +27,7 @@ validaEntrada(){
     return false;
   }
   if(validaEntrada == "admin" && senhaEntrada == "admin"){
-    window.location.href = "carrinho";
+    window.location.href = "loja";
     return false;
 
   }
