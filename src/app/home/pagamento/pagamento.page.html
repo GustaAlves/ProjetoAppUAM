@@ -1,15 +1,63 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>pagamento</ion-title>
+  <ion-toolbar color="light">
+    <ion-title>Pagamento</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
-    <ion-card>
+    <ion-card class="ion-text-center">
+        <ion-card-title>Selecione o metodo de pagamento.</ion-card-title>
         <ion-card-content>
-            <ion-text>Teste</ion-text>
+            <ion-list>
+                <ion-radio-group>
+                    <ion-item>
+                        <ion-label position="inline">Cartao de Credito</ion-label>
+                        <ion-radio slot="start" value="card"></ion-radio>
+                        <ion-icon slot="start" name="card-outline" size="auto"></ion-icon>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="inline">Cartao de Debito</ion-label>
+                        <ion-radio slot="start" value="debito"></ion-radio>
+                        <ion-icon slot="start" name="card" size="auto"></ion-icon>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="inline">Dinheiro</ion-label>
+                        <ion-radio slot="start" value="dinheiro"></ion-radio>
+                        <ion-icon slot="start" name="cash-outline" size="auto"></ion-icon>
+                    </ion-item>
+
+                </ion-radio-group>
+            </ion-list>
         </ion-card-content>
     </ion-card>
+
+    <ion-card>
+        <ion-card-title class="ion-padding">Possui um cupom de desconto?</ion-card-title>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="auto">
+                    <ion-item>
+                        <ion-input placeholder="Insire aqui!"></ion-input>
+                    </ion-item>
+                </ion-col>
+
+                <ion-col>
+                    <ion-button>CONFIRMAR</ion-button>
+                </ion-col>
+            </ion-row>
+
+        </ion-grid>
+
+    </ion-card>
+
+    <ion-grid>
+        <ion-row class="ion-justify-content-center">
+            <ion-button color="success" (click)="finalizarPagamento()"><strong>EFETUAR PAGAMENTO</strong></ion-button>
+        </ion-row>
+    </ion-grid>
     
+
 </ion-content>
