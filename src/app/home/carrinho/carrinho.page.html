@@ -107,13 +107,13 @@
         <ion-card>
             <ion-card-header>Periodo de aluguel</ion-card-header>
             <ion-item>
-                <ion-datetime displayformat="DD de MMMM" placeholder="Selecione a data de inicio"></ion-datetime>
+                <ion-datetime displayformat="DD MMMM" placeholder="Selecione a data de inicio"></ion-datetime>
             </ion-item>
         </ion-card>
 
         <ion-grid>
             <ion-row class="ion-justify-content-center">
-                <ion-button color="success" click="fazerPagamento()"><strong>CONFIRMAR ALUGUEL</strong></ion-button>
+                <ion-button color="success" (click)="fazerPagamento()"><strong>CONFIRMAR ALUGUEL</strong></ion-button>
             </ion-row>
         </ion-grid>
 
