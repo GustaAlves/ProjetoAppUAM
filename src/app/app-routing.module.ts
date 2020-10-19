@@ -21,8 +21,12 @@ const routes: Routes = [
   },
   {
     path: 'loja',
-    loadChildren: () => import('./home/loja/loja.module').then( m => m.LojaPageModule)
+      loadChildren: () => import('./home/loja/loja.module').then(m => m.LojaPageModule)
   },
+  {
+    path: "pagamento",
+      loadChildren: () => import('./home/pagamento/pagamento.module').then(m => m.PagamentoPageModule)
+  }
 ];
 
 ;
