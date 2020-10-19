@@ -35,8 +35,8 @@ export class AppComponent {
     alert("Por favor, contate um administrador");
     }
 validaEntrada(){
-  let validaEntrada = document.getElementById("nomeValida").value;
-  let senhaEntrada = document.getElementById("senhaValida").value;
+  let validaEntrada = document.getElementById("nomeValida").text;
+  let senhaEntrada = document.getElementById("senhaValida").text;
   if(validaEntrada == "")
   {
     document.getElementById("p1").innerHTML = "Digite um usuário";
