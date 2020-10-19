@@ -9,6 +9,11 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
+        path: '',
+        redirectTo: 'sobre',
+        pathMatch: 'full'
+      },
+      {
         path: 'sobre',
         loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
       },
@@ -24,12 +29,7 @@ const routes: Routes = [
         path: 'carrinho',
         loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
       },
-      {
-        path: '',
-        redirectTo: 'loja',
-        pathMatch: 'full'
-      },
-
+      
     ]
     
   },
