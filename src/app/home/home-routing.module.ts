@@ -33,10 +33,7 @@ const routes: Routes = [
     ]
     
   },
-  {
-    path: 'sobre',
-    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
-  }
+ 
 
 ];
 
