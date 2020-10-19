@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarrinhoPage implements OnInit {
 
-  constructor() { }
+    constructor() { }
+
+    fazerPagamento() {
+        window.location.href = "pagamento";
+        return false;
+    }
 
   ngOnInit() {
   }
