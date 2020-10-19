@@ -26,7 +26,7 @@ validaEntrada(){
     validaEntrada();
     return false;
   }
-  if(validaEntrada == "admin" && senhaEntrada == "admin"){
+  if(validaEntrada == "Luiz" && senhaEntrada == "admin"){
     window.location.href = "loja";
     return false;
 
