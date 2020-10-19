@@ -7,8 +7,9 @@ import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'valida/valida.page.html',
-  styleUrls: ['valida/valida.page.scss']
+  templateUrl: 'home/valida/valida.page.html',
+  styleUrls: ['home/valida/valida.page.scss']
+
 
   
 })
@@ -49,7 +50,7 @@ validaEntrada(){
     return false;
   }
   if(validaEntrada == "admin" && senhaEntrada == "admin"){
-    window.location.href = "carrinho";
+    window.location.href = "home/carrinho";
     return false;
 
   }
