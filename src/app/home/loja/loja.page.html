@@ -1,9 +1,342 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>loja</ion-title>
+   
+  
+    <ion-searchbar></ion-searchbar>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content >
 
+ 
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+        <ion-card >
+          <ion-card-header>
+            <ion-col >
+              <img width="500" height="200" src="https://i.pinimg.com/originals/84/97/5b/84975b3306e2199a79fed6e5acc44146.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Dolce Gabanna</ion-card-title>
+            <ion-card-subtitle>Tênis casual</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 290,00 Dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="Sem/tamanho" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="39">39</ion-select-option>
+                  <ion-select-option value="40">40</ion-select-option>
+                  <ion-select-option value="41">41</ion-select-option>
+                  <ion-select-option value="42">42</ion-select-option>
+                  <ion-select-option value="43">43</ion-select-option>
+                  <ion-select-option value="44">44</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-col  >
+              <img width="500" height="200" src="https://http2.mlstatic.com/D_NQ_NP_779177-MLB43221022460_082020-W.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Christian Dior</ion-card-title>
+            <ion-card-subtitle>Bolsa monclier</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 140,00 dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="tamanho" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="Unico">Unico</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+    <ion-row>
+
+      <ion-col>
+        <ion-card >
+          <ion-card-header>
+            <ion-col >
+              <img width="500" height="200" src="https://i.pinimg.com/originals/46/ac/71/46ac7139ac294d46888faab6a7c75ed2.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Dolce Gabanna</ion-card-title>
+            <ion-card-subtitle>Vestido Coleção verão 2017</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 400,00 dia </h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="Sem/tamanho" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+                  <ion-select-option value="M">M</ion-select-option>
+                  <ion-select-option value="G">G</ion-select-option>
+                  <ion-select-option value="GG">GG</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-col  >
+              <img width="500" height="200" src="https://images.tcdn.com.br/img/img_prod/708458/bolsa_louis_vuitton_alma_monogram_bb_121_2_20190623213536.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Louis Vuitton</ion-card-title>
+            <ion-card-subtitle>Bolsa Modelo Alma Mongram BB</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 200,00 dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="Único" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="Único">Unico</ion-select-option>
+
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-card >
+          <ion-card-header>
+            <ion-col >
+              <img width="500" height="200" src="https://i.pinimg.com/originals/d3/67/78/d36778f41c4744d045b7d713366f5edd.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Tagliatore</ion-card-title>
+            <ion-card-subtitle>Terno Coleção 2019</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 600,00 dia </h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+                  <ion-select-option value="M">M</ion-select-option>
+                  <ion-select-option value="G">G</ion-select-option>
+                  <ion-select-option value="GG">GG</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-col  >
+              <img width="500" height="200" src="https://cdn-images.farfetch-contents.com/14/15/74/70/14157470_18868870_480.jpg" alt="">
+            </ion-col>
+            <ion-card-title>LeQarant</ion-card-title>
+            <ion-card-subtitle>Conjunto Camiseta + Calça</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 100,00 dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+                  <ion-select-option value="M">M</ion-select-option>
+                  <ion-select-option value="G">G</ion-select-option>
+                  <ion-select-option value="GG">GG</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-card >
+          <ion-card-header>
+            <ion-col >
+              <img width="500" height="200" src="https://d26lpennugtm8s.cloudfront.net/stores/205/468/products/sapato-gucci-ssg2501-gvimport_011-7569c14ba53a8e0b1a15536104386214-640-0.jpeg" alt="">
+            </ion-col>
+            <ion-card-title>Gucci</ion-card-title>
+            <ion-card-subtitle>Sapato Coleção 2018</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 250,00 dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="39">39</ion-select-option>
+                  <ion-select-option value="40">40</ion-select-option>
+                  <ion-select-option value="42">42</ion-select-option>
+                  <ion-select-option value="44">44</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-col  >
+              <img width="500" height="200" src="https://cdn-images.farfetch-contents.com/14/50/29/07/14502907_23781400_600.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Versace</ion-card-title>
+            <ion-card-subtitle>Jaqueta Coleção Inverno 2015</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 330,00 dia </h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+                  <ion-select-option value="M">M</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col>
+        <ion-card >
+          <ion-card-header>
+            <ion-col >
+              <img width="500" height="200" src="https://cdn-images.farfetch-contents.com/13/19/14/12/13191412_15504545_1000.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Moncler Grenoble</ion-card-title>
+            <ion-card-subtitle>Jaqueta matelassê</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 450,00 dia</h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+                  <ion-select-option value="M">M</ion-select-option>
+                  <ion-select-option value="GG">GG</ion-select-option>
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-col  >
+              <img width="500" height="200" src="https://cdn-images.farfetch-contents.com/14/50/68/99/14506899_21842742_1000.jpg" alt="">
+            </ion-col>
+            <ion-card-title>Prada</ion-card-title>
+            <ion-card-subtitle>Casaco de cashmere Double</ion-card-subtitle>
+          </ion-card-header>
+        
+          <ion-card-content>
+            <h2>R$: 1000,00 dia </h2>
+            <ion-list>
+              <ion-item>
+                <ion-label>Tamanho</ion-label>
+                <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+                  <ion-select-option value="P">P</ion-select-option>
+
+                </ion-select>
+              </ion-item>
+            
+            </ion-list>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+    
+  </ion-grid>
 </ion-content>
