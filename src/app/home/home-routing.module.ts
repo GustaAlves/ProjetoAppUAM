@@ -6,7 +6,7 @@ import { HomePage } from './home.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    component: HomePage,
     children: [
       {
         path: 'loja',
@@ -19,9 +19,15 @@ const routes: Routes = [
       {
         path: 'carrinho',
         loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
-      }
+      },
+      {
+        path: '',
+        redirectTo: 'loja',
+        pathMatch: 'full'
+      },
 
     ]
+    
   }
 ];
 

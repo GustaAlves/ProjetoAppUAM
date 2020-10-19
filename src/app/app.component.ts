@@ -7,8 +7,8 @@ import { stringify } from 'querystring';
 
 @Component({
   selector: 'app-root',
-  templateUrl: 'home/valida/valida.page.html',
-  styleUrls: ['home/valida/valida.page.scss']
+  templateUrl: 'home/home.page.html',
+  styleUrls: ['home/home.page.scss']
 
 
   
