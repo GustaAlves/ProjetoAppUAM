@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagamentoPage implements OnInit {
 
-  constructor() { }
+    constructor() { }
+
+    finalizarPagamento() {
+        alert("Teste de confirmacao");
+        window.location.href = "loja";
+    }
 
   ngOnInit() {
   }
