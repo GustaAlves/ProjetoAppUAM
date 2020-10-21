@@ -12,8 +12,8 @@ export class ValidaPage implements OnInit {
     alert("Por favor, contate um administrador");
     }
 validaEntrada(){
-  let validaEntrada = (document.getElementById("nomeValida")).nodeValue;
-  let senhaEntrada = (document.getElementById("senhaValida")).nodeValue;
+  let validaEntrada = (document.getElementById("nomeValida")) as any;
+  let senhaEntrada = (document.getElementById("senhaValida")) as any;
   if(validaEntrada == "")
   {
     document.getElementById("p1").innerHTML = "Digite um usuário";
