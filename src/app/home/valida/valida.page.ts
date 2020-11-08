@@ -12,28 +12,20 @@ export class ValidaPage implements OnInit {
     alert("Por favor, contate um administrador");
     }
 validaEntrada(){
-  let validaEntrada = (document.getElementById("nomeValida")) as any;
-  let senhaEntrada = (document.getElementById("senhaValida")) as any;
-  if(validaEntrada == "")
-  {
-    document.getElementById("p1").innerHTML = "Digite um usuário";
-    document.getElementById("nomeValida").focus();
-    validaEntrada();
-    return false;
-  }
+  let senhaEntrada = document.getElementById("senhaValida").value;
+  
   if(senhaEntrada == ""){
     document.getElementById("p1").innerHTML = "Digite uma senha";
-    validaEntrada();
+    this.validaEntrada();
     return false;
   }
-  if(validaEntrada == "Luiz" && senhaEntrada == "admin"){
-    window.location.href = "loja";
+  if(senhaEntrada == "admin"){
+    window.location.href = "deleta-item";
     return false;
-
   }
-  if(validaEntrada != "admin" && senhaEntrada != "admin"){
-    alert("Usuário ou senha inválidos");
-    validaEntrada();
+  if(senhaEntrada != "admin"){
+    document.getElementById("p1").innerHTML = "Senha inválida";
+    this.validaEntrada();
     return false;
   }
 else{

@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: "pagamento",
       loadChildren: () => import('./home/pagamento/pagamento.module').then(m => m.PagamentoPageModule)
+  },
+  {
+    path: 'deleta-item',
+    loadChildren: () => import('./deleta-item/deleta-item.module').then( m => m.DeletaItemPageModule)
   }
 ];
 

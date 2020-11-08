@@ -33,6 +33,10 @@ const routes: Routes = [
     ]
     
   },
+  {
+    path: 'deleta-item',
+    loadChildren: () => import('./deleta-item/deleta-item.module').then( m => m.DeletaItemPageModule)
+  },
 
  
 

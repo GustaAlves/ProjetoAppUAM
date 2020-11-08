@@ -3,33 +3,26 @@
     <div id="Foto1">
       <img src="http://ci.eco.br/wp-content/uploads/2019/04/futurecraft_loop.jpg">
     </div>
-      <div id="Ola">
-     
-        <strong>Lojas UAM</strong>
-      </div>
+      
 
-      <br>
-      <br>
-      <br>
-      
-      <ion-item>
-      <ion-icon name="person-outline" slot="start"></ion-icon>
-      <ion-input placeholder="Usuário" id="nomeValida"></ion-input>
-      
-      </ion-item>
-      <br>
-      <br>
-      <ion-item>
-        <ion-icon name="key-outline" slot="start"></ion-icon>
-      <ion-input placeholder="Senha" type="password" id="senhaValida" onkeypress="validaEntrada()"></ion-input>
-      </ion-item>
-      <div id="entrar">
-      <ion-button (click)="validaEntrada()">Entrar</ion-button>
-    </div>
-  <div id="esqueceu">
-    <a (click)="alerta1()">Esqueceu sua senha?</a>
-  </div>
-  <p id="p1"></p>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>Excluir Item</ion-card-title>
+          <br>
+          <ion-card-subtitle>Entre com a senha master:</ion-card-subtitle>
+        </ion-card-header>
+          <br>
+          <ion-item>
+            <ion-icon name="key-outline" slot="start"></ion-icon>
+          <ion-input placeholder="Senha" type="password" id="senhaValida" onkeypress="validaEntrada()"></ion-input>
+          </ion-item>
+          <div id="entrar">
+          <ion-button (click)="validaEntrada()">Entrar</ion-button>
+        </div>
+        
+        <p id="p1"></p>
+        </ion-card>
+ 
 </div>
 <br>
 </ion-content>
