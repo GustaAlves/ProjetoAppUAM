@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import{Produto} from '../loja.page';
 @Component({
   selector: 'app-criar',
   templateUrl: './criar.page.html',
