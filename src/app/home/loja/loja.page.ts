@@ -19,7 +19,8 @@ export interface Produto{
 export class LojaPage implements OnInit {
  
   public produto : Produto[] = [
-    {nome: 'Camisa 1', tamanho:'M', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'}
+    {nome: 'Camisa 1', tamanho:'M', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'},
+    {nome: 'Blusa 2', tamanho:'G', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'}
   ]
   
   constructor(private modalControler: ModalController) { }
