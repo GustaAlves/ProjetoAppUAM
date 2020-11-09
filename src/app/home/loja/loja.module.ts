@@ -19,3 +19,4 @@ import { ProductDetailsComponent } from '../product-details/product-details.comp
   declarations: [LojaPage, ProductDetailsComponent]
 })
 export class LojaPageModule {}
+

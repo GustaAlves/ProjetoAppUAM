@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
 
-interface Produto{
+export interface Produto{
   nome : string;
   tamanho: string;
   cor : string;
