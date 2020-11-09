@@ -1,45 +1,45 @@
 <ion-list>
   <ion-item>
     <ion-label position="floating">Nome do Produto</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input [(ngModel)]="produto.nome" type="text"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="fixed">Tamanho</ion-label>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)]="produto.tamanho">
       <ion-item>
-        <ion-radio value="p"></ion-radio>
+        <ion-radio value="P"></ion-radio>
         <ion-label class="ion-padding-end">P</ion-label>
-        <ion-radio value="m"></ion-radio>
+        <ion-radio value="M"></ion-radio>
         <ion-label class="ion-padding-end">M</ion-label>
-        <ion-radio value="g"></ion-radio>
+        <ion-radio value="G"></ion-radio>
         <ion-label>G</ion-label>
       </ion-item>
     </ion-radio-group>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Cor</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input [(ngModel)]="produto.cor" type="text"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="fixed">Gênero</ion-label>
-    <ion-radio-group>
+    <ion-radio-group [(ngModel)]="produto.publico">
       <ion-item>
-        <ion-radio value="unisex"></ion-radio>
+        <ion-radio value="Unisex"></ion-radio>
         <ion-label class="ion-padding-end">U</ion-label>
-        <ion-radio value="feminino"></ion-radio>
+        <ion-radio value="Feminino"></ion-radio>
         <ion-label class="ion-padding-end">F</ion-label>
-        <ion-radio value="masculino"></ion-radio>
+        <ion-radio value="Masculino"></ion-radio>
         <ion-label>M</ion-label>
       </ion-item>
     </ion-radio-group>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Valor</ion-label>
-    <ion-input type="number"></ion-input>
+    <ion-input [(ngModel)]="produto.valor" type="number"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label position="floating">Contato</ion-label>
-    <ion-input type="tel"></ion-input>
+    <ion-input [(ngModel)]="produto.contato" type="tel"></ion-input>
   </ion-item>
   <ion-button (click)="this.added.emit()" expand="block">
     Adicionar Produto

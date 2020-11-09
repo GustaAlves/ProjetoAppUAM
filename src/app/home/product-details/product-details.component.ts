@@ -3,7 +3,7 @@ import { ModalController } from '@ionic/angular';
 import { from } from 'rxjs';
 import { __importDefault } from 'tslib';
 
-import{Produto} from '../loja/loja.page';
+import { Produto } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product-details',

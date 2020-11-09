@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'criar',
     loadChildren: () => import('src/app/home/loja/criar/criar.module').then( m => m.CriarPageModule)
   },
+  {
+    path: 'editar',
+    loadChildren: () => import('src/app/home/loja/editar/editar.module').then(m => m.EditarPageModule)
+  }
 
  
 

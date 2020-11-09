@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import{Produto} from '../loja.page';
+import { NavController } from '@ionic/angular';
+import { ProductService, Produto } from 'src/app/services/product.service';
+
 @Component({
   selector: 'app-criar',
   templateUrl: './criar.page.html',
@@ -16,7 +18,10 @@ export class CriarPage implements OnInit {
     contato : '',
   };
 
-  constructor() { }
+  constructor(
+    private productService: ProductService,
+    private navCtrl: NavController
+    ) { }
   
   abrirLoja(){
     window.location.href = "loja";
@@ -26,7 +31,8 @@ export class CriarPage implements OnInit {
   }
 
   public handleAdded(){
-    console.log(this.emptyProduto);
+    this.productService.criar(this.emptyProduto);
+    this.navCtrl.back;
   }
 
 }

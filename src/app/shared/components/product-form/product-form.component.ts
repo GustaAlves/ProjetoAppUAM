@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import{Produto} from 'src/app/home/loja/loja.page'
+import { Produto } from 'src/app/services/product.service';
 @Component({
   selector: 'app-product-form',
   templateUrl: './product-form.component.html',

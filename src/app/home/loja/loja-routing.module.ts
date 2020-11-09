@@ -6,12 +6,20 @@ import { LojaPage } from './loja.page';
 const routes: Routes = [
   {
     path: '',
-    component: LojaPage
+    component: LojaPage,
+    children: [
+      {
+        path: 'criar',
+        loadChildren: () => import('./criar/criar.module').then( m => m.CriarPageModule)
+      },
+      {
+        path: 'editar',
+        loadChildren: () => import('./editar/editar.module').then( m => m.EditarPageModule)
+      }
+    ],
   },
-  {
-    path: 'criar',
-    loadChildren: () => import('./criar/criar.module').then( m => m.CriarPageModule)
-  }
+  
+
 ];
 
 @NgModule({

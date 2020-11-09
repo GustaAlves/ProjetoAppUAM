@@ -34,7 +34,12 @@ const routes: Routes = [
   {
     path: 'criar',
     loadChildren: () => import('./home/loja/criar/criar.module').then( m => m.CriarPageModule)
+  },
+  {
+    path: 'editar',
+    loadChildren: () => import('./home/loja/editar/editar.module').then( m => m.EditarPageModule)
   }
+
 ];
 
 ;

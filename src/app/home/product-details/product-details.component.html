@@ -3,8 +3,11 @@
     <ion-title>
       Informações do produto
     </ion-title>
-    <ion-button (click)="closeModal()">
+    <ion-button slot="start" (click)="closeModal()">
       <ion-icon slot="icon-only" name="close"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" (click)="closeModal()" [routerLink]="['/editar', produto.nome]">
+      <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
     </ion-button>
   </ion-toolbar>
 </ion-header>
