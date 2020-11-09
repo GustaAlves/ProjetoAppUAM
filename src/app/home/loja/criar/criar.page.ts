@@ -7,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CriarPage implements OnInit {
 
+  public emptyProduto: Produto = {
+    nome : '',
+    tamanho: '',
+    cor : '',
+    publico : '',
+    valor : '',
+    contato : '',
+  };
+
   constructor() { }
   
   abrirLoja(){
@@ -14,6 +23,10 @@ export class CriarPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  public handleAdded(){
+    console.log(this.emptyProduto);
   }
 
 }

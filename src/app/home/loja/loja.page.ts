@@ -43,7 +43,6 @@ export class LojaPage implements OnInit {
 
   abrirCriar(){
     window.location.href = "criar";
-  
   }
   ngOnInit() {
   }

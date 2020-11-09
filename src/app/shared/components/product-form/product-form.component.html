@@ -1,0 +1,47 @@
+<ion-list>
+  <ion-item>
+    <ion-label position="floating">Nome do Produto</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Tamanho</ion-label>
+    <ion-radio-group>
+      <ion-item>
+        <ion-radio value="p"></ion-radio>
+        <ion-label class="ion-padding-end">P</ion-label>
+        <ion-radio value="m"></ion-radio>
+        <ion-label class="ion-padding-end">M</ion-label>
+        <ion-radio value="g"></ion-radio>
+        <ion-label>G</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Cor</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Gênero</ion-label>
+    <ion-radio-group>
+      <ion-item>
+        <ion-radio value="unisex"></ion-radio>
+        <ion-label class="ion-padding-end">U</ion-label>
+        <ion-radio value="feminino"></ion-radio>
+        <ion-label class="ion-padding-end">F</ion-label>
+        <ion-radio value="masculino"></ion-radio>
+        <ion-label>M</ion-label>
+      </ion-item>
+    </ion-radio-group>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Valor</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contato</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-button (click)="this.added.emit()" expand="block">
+    Adicionar Produto
+  </ion-button>
+</ion-list>

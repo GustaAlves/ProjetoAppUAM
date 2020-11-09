@@ -31,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'criar',
-    loadChildren: () => import('./criar/criar.module').then( m => m.CriarPageModule)
+    loadChildren: () => import('src/app/home/loja/criar/criar.module').then( m => m.CriarPageModule)
   },
 
  

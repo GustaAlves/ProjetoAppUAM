@@ -1,14 +1,14 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title>
-      Criar produto
-    </ion-title>
-    <ion-button (click)="abrirLoja()">
-      <ion-icon slot="icon-only" name="close"></ion-icon>
+    <ion-button slot="start" (click)="abrirLoja()">
+      <ion-icon name="close"></ion-icon>
     </ion-button>
+    <ion-title>
+      Criar produtos
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <app-product-form [produto]="emptyProduto" (added)="handleAdded()"></app-product-form>
 </ion-content>
