@@ -32,7 +32,7 @@ export class CriarPage implements OnInit {
 
   public handleAdded(){
     this.productService.criar(this.emptyProduto);
-    this.navCtrl.back;
+    this.navCtrl.back();
   }
 
 }

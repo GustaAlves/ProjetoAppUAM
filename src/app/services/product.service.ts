@@ -15,7 +15,7 @@ export interface Produto{
 })
 export class ProductService {
   
-  private produto : Produto[] = [];
+  private produto: Produto[] = [];
 
   constructor(private storage: Storage){
     this.loadData();

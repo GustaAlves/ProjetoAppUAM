@@ -20,6 +20,6 @@ export class ProductDetailsComponent implements OnInit {
     console.log(this.produto);
   }
   public closeModal(){
-this.ModalController.dismiss();
+    this.ModalController.dismiss();
   }
 }
