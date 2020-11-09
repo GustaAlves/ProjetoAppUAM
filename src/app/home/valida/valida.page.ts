@@ -12,7 +12,7 @@ export class ValidaPage implements OnInit {
     alert("Por favor, contate um administrador");
     }
 validaEntrada(){
-  let senhaEntrada = document.getElementById("senhaValida").value;
+  let senhaEntrada = (document.getElementById("senhaValida") as HTMLInputElement).value;
   
   if(senhaEntrada == ""){
     document.getElementById("p1").innerHTML = "Digite uma senha";
