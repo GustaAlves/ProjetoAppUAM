@@ -23,7 +23,7 @@ export class LojaPage implements OnInit {
   ]
   
   constructor(private modalControler: ModalController) { }
-
+  
   public async openModal(produto : Produto){
     const modal = await this.modalControler.create({
       component: ProductDetailsComponent,
