@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\home",
+    "\\src\\app\\home\\carrinho",
+    "\\src\\app\\home\\loja",
+    "\\src\\app\\home\\pagamento",
+    "\\src\\app\\home\\sobre",
+    "\\src\\app\\home\\valida",
+    "\\src\\theme"
   ],
+  "SelectedNode": "\\src\\app\\home\\pagamento\\pagamento.page.ts",
   "PreviewInSolutionExplorer": false
 }
