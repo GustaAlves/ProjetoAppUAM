@@ -25,10 +25,6 @@ const routes: Routes = [
         path: 'valida',
         loadChildren: () => import('./valida/valida.module').then( m => m.ValidaPageModule)
       },
-      {
-        path: 'carrinho',
-        loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
-      },
       
     ]
     
