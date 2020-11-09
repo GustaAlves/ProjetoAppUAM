@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ProductDetailsComponent } from '../product-details/product-details.component';
 
 interface Produto{
   nome : string;
@@ -20,8 +22,17 @@ export class LojaPage implements OnInit {
     {nome: 'Camisa 1', tamanho:'M', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'}
   ]
   
-  constructor() { }
+  constructor(private modalControler: ModalController) { }
 
+  public async openModal(produto : Produto){
+    const modal = await this.modalControler.create({
+      component: ProductDetailsComponent,
+      componentProps:{
+        produto
+      }
+    });
+    modal.present();
+  }
   ngOnInit() {
   }
 
