@@ -19,8 +19,14 @@ export interface Produto{
 export class LojaPage implements OnInit {
  
   public produto : Produto[] = [
-    {nome: 'Camisa 1', tamanho:'M', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'},
-    {nome: 'Blusa 2', tamanho:'G', cor:'Azul', publico:'Masculino', valor:'30', contato:'(11) 4002-8922'}
+    {nome: 'Blusa moletom Atlética Grifo', tamanho:'G', cor:'Verde', publico:'Unisex', valor:'30', contato:'(11) 99939-6302'},
+{nome: 'Jaqueta Corta Vento', tamanho:'M', cor:'Branco', publico:'Masculino', valor:'20', contato:'(11) 93864-7234'},
+{nome: 'Regata Furacão Primata', tamanho:'G', cor:'Azul/Branco', publico:'Feminino', valor:'10', contato:'(11) 92905-2257'},
+{nome: 'Terno completo', tamanho:'P', cor:'Preto', publico:'Masculino', valor:'70', contato:'(11) 99403-0466'},
+{nome: 'Chuteira Futsal', tamanho:'35', cor:'Azul', publico:'Feminino', valor:'30', contato:'(13) 98560-2811'},
+{nome: 'Tênis basquete', tamanho:'43', cor:'Laranja/Preto', publico:'Masculino', valor:'40', contato:'(11) 92658-7951'},
+{nome: 'Conjunto Atlética Gorila', tamanho:'PP', cor:'Azul', publico:'Feminino', valor:'50', contato:'(11) 90442-1858'},
+{nome: 'Blusa moletom NDU', tamanho:'P', cor:'Preto', publico:'Masculino', valor:'35', contato:'(11) 94226-4604'}
   ]
   
   constructor(private modalControler: ModalController) { }

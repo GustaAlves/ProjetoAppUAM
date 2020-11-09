@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 import { from } from 'rxjs';
 import { __importDefault } from 'tslib';
 
@@ -13,10 +14,12 @@ export class ProductDetailsComponent implements OnInit {
 
 @Input() produto: Produto;
 
-  constructor() { }
+  constructor(private ModalController: ModalController) { }
 
   ngOnInit() {
     console.log(this.produto);
   }
-
+  public closeModal(){
+this.ModalController.dismiss();
+  }
 }
