@@ -40,6 +40,11 @@ export class LojaPage implements OnInit {
     });
     modal.present();
   }
+
+  abrirCriar(){
+    window.location.href = "criar";
+  
+  }
   ngOnInit() {
   }
 

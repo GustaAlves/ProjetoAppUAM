@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'deleta-item',
     loadChildren: () => import('./home/deleta-item/deleta-item.module').then( m => m.DeletaItemPageModule)
+  },
+  {
+    path: 'criar',
+    loadChildren: () => import('./home/loja/criar/criar.module').then( m => m.CriarPageModule)
   }
 ];
 

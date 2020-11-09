@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class CriarPage implements OnInit {
 
   constructor() { }
+  
+  abrirLoja(){
+    window.location.href = "loja";
+  }
 
   ngOnInit() {
   }

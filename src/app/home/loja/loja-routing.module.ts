@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: LojaPage
+  },
+  {
+    path: 'criar',
+    loadChildren: () => import('./criar/criar.module').then( m => m.CriarPageModule)
   }
 ];
 
