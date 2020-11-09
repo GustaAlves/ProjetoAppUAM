@@ -1,6 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { from } from 'rxjs';
+import { __importDefault } from 'tslib';
+
 import {produto} from '../loja/loja.page';
+
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
@@ -8,8 +11,12 @@ import {produto} from '../loja/loja.page';
 })
 export class ProductDetailsComponent implements OnInit {
 
+@Input() produto: Produto;
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log(this.produto);
+  }
 
 }
