@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ProductService, Produto } from 'src/app/services/product.service';
-import { ProductDetailsComponent } from '../product-details/product-details.component';
+import { ProductDetailsComponent } from 'src/app/home/product-details/product-details.component';
 
 @Component({
   selector: 'app-excluir',
