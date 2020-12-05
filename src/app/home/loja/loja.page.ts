@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ProductService, Produto } from 'src/app/services/product.service';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
-
+import _ from 'lodash';
 
 
 @Component({
@@ -11,7 +11,8 @@ import { ProductDetailsComponent } from '../product-details/product-details.comp
   styleUrls: ['./loja.page.scss'],
 })
 export class LojaPage implements OnInit {
- 
+  allprodutos:any;
+  querytext:string;
   public produto = this.productService.all();
   
   constructor(
@@ -35,4 +36,19 @@ export class LojaPage implements OnInit {
   ngOnInit() {
   }
 
-}
+  filterProduto(prod:any){
+    let val = prod.target.value;
+    if(val && val.tri() !=''){
+      this.produto = _.values (this.allprodutos);
+      this.produto = this.produto.filter((produto) => {
+        return (produto.nome.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    } else {
+      this.produto = this.allprodutos;
+    }
+      }
+    }
+
+  
+  
+
