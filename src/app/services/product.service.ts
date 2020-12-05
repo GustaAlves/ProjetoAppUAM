@@ -44,6 +44,10 @@ export class ProductService {
     this.produto[idx] = { ... produto };
     this.saveData();
   }
+  public deletar(produto:Produto){
+    this.produto.pop();
+    this.saveData();
+  }
 
   public find(nome: string){
     return { ...this.produto.find(p => p.nome === nome) };
