@@ -38,6 +38,22 @@ const routes: Routes = [
   {
     path: 'editar',
     loadChildren: () => import('./home/loja/editar/editar.module').then( m => m.EditarPageModule)
+  },
+  {
+    path: 'deleta',
+    loadChildren: () => import('./loja/deleta/deleta.module').then( m => m.DeletaPageModule)
+  },
+  {
+    path: 'deleta-item',
+    loadChildren: () => import('./loja/deleta-item/deleta-item.module').then( m => m.DeletaItemPageModule)
+  },
+  {
+    path: 'excluir',
+    loadChildren: () => import('./loja/excluir/excluir.module').then( m => m.ExcluirPageModule)
+  },
+  {
+    path: 'excluir',
+    loadChildren: () => import('./excluir/excluir.module').then( m => m.ExcluirPageModule)
   }
 
 ];

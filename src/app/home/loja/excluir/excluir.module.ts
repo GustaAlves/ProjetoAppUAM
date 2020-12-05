@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DeletaItemPageRoutingModule } from './deleta-item-routing.module';
+import { ExcluirPageRoutingModule } from './excluir-routing.module';
 
-import { DeletaItemPage } from './deleta-item.page';
+import { ExcluirPage } from './excluir.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DeletaItemPageRoutingModule
+    ExcluirPageRoutingModule
   ],
-  declarations: [DeletaItemPage]
+  declarations: [ExcluirPage]
 })
-export class DeletaItemPageModule {}
+export class ExcluirPageModule {}

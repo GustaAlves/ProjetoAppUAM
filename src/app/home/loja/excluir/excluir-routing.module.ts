@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { DeletaItemPage } from './deleta-item.page';
+import { ExcluirPage } from './excluir.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: DeletaItemPage
+    component: ExcluirPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class DeletaItemPageRoutingModule {}
+export class ExcluirPageRoutingModule {}

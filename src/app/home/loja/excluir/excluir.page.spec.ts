@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { DeletaItemPage } from './deleta-item.page';
+import { ExcluirPage } from './excluir.page';
 
-describe('DeletaItemPage', () => {
-  let component: DeletaItemPage;
-  let fixture: ComponentFixture<DeletaItemPage>;
+describe('ExcluirPage', () => {
+  let component: ExcluirPage;
+  let fixture: ComponentFixture<ExcluirPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DeletaItemPage ],
+      declarations: [ ExcluirPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(DeletaItemPage);
+    fixture = TestBed.createComponent(ExcluirPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

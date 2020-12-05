@@ -20,7 +20,7 @@ validaEntrada(){
     return false;
   }
   if(senhaEntrada == "admin"){
-    window.location.href = "deleta-item";
+    window.location.href = "excluir";
     return false;
   }
   if(senhaEntrada != "admin"){
