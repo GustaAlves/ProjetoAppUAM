@@ -8,7 +8,7 @@ import { Produto } from 'src/app/services/product.service';
 export class ProductFormComponent implements OnInit {
 
   @Input() produto: Produto;
-  @Output() added = new EventEmitter(); 
+  @Output() added = new EventEmitter();
 
   constructor() { }
 
