@@ -1,9 +1,15 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-   
-  <br>
-    <ion-searchbar></ion-searchbar>
-
+  <ion-title>
+    Produto
+  </ion-title> 
+</ion-toolbar>
+<ion-toolbar>
+    <ion-searchbar placeholder="Buscar produto"
+    [(ngModel)]="queryText"
+    (ionInput)="filterProduto"($event)
+    clearInput >
+  </ion-searchbar> </ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
