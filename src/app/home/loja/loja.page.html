@@ -7,8 +7,8 @@
 <ion-toolbar>
     <ion-searchbar placeholder="Buscar produto"
     [(ngModel)]="queryText"
-    (ionInput)="filterProduto"($event)
-    clearInput >
+    (ionInput)="filterProduto($event)"
+    clearinput>
   </ion-searchbar> 
   </ion-toolbar>
 </ion-header>
