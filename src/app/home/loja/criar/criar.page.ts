@@ -17,6 +17,7 @@ export class CriarPage implements OnInit {
     valor : '',
     contato : '',
   };
+  
 
   constructor(
     private productService: ProductService,
