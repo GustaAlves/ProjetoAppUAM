@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package br.com.grupo10.lojauam;
 
 import android.os.Bundle;
 

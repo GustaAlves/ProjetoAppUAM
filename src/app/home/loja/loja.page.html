@@ -26,7 +26,9 @@
   </ion-fab>
  <ion-list>
   <ion-item *ngFor="let p of produto" (click)="openModal(p)">
-
+    <ion-thumbnail slot="start">
+      <img src={{p.photoItem}}>
+    </ion-thumbnail>
     <h2>{{p.nome}}</h2>
   
   </ion-item>
