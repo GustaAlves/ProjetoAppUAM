@@ -15,6 +15,7 @@ export class ExcluirPage implements OnInit {
     
   }
   public emptyProduto: Produto = {
+    photoItem:'',
     nome : '',
     tamanho: '',
     cor : '',
