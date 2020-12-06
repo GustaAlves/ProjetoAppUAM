@@ -48,11 +48,35 @@ export class ProductService {
   }
   public deletar(produto:Produto, nome: string){
     const idx = this.produto.findIndex(p => p.nome === nome);
-    produto[idx] = this.produto.splice(idx,1);
+    this.produto.splice(idx,1);
     this.saveData();
   }
 
   public find(nome: string){
     return { ...this.produto.find(p => p.nome === nome) };
   }
+
+  public filtrarProdutos(nome: string): Produto[]{
+    if(nome === '') { return this.all(); }
+
+    else{
+      let produtosFiltrados: Produto[] = [];
+
+      // produtosFiltrados.push(this.produto.filter());
+      
+      this.produto.forEach( p => {
+        if(p.nome === nome){
+          produtosFiltrados.push(p);
+        }        
+      });
+
+      // this.produto.forEach(p =>
+      // {
+      //   produtosFiltrados.push(this.find(nome));
+      // });
+
+      return produtosFiltrados;
+    }
+  }
 }
+
