@@ -10,6 +10,7 @@ import { ProductService, Produto } from 'src/app/services/product.service';
 export class CriarPage implements OnInit {
 
   public emptyProduto: Produto = {
+    photoItem:'',
     nome : '',
     tamanho: '',
     cor : '',

@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage';
+import { Url } from 'url';
 
 export interface Produto{
+  photoItem: string;
   nome : string;
   tamanho: string;
   cor : string;
