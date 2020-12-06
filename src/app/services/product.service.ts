@@ -48,11 +48,28 @@ export class ProductService {
   }
   public deletar(produto:Produto, nome: string){
     const idx = this.produto.findIndex(p => p.nome === nome);
-    produto[idx] = this.produto.splice(idx,1);
+    this.produto.splice(idx,1);
     this.saveData();
   }
 
   public find(nome: string){
     return { ...this.produto.find(p => p.nome === nome) };
   }
+
+  public filtrarProdutos(nome: string): Produto[]{
+    if(nome === '') { return this.all(); }
+
+    else{
+      let produtosFiltrados: Produto[] = [];
+      
+      this.produto.forEach( p => {
+        if(p.nome.indexOf(nome) > -1){
+          produtosFiltrados.push(p);
+        }        
+      });
+      
+      return produtosFiltrados;
+    }
+  }
 }
+
