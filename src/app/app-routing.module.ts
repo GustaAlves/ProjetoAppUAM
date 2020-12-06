@@ -39,7 +39,7 @@ const routes: Routes = [
   {
     path: 'excluir',
     loadChildren: () => import('./home/loja/excluir/excluir.module').then( m => m.ExcluirPageModule)
-  }
+  },
 ];
 
 ;

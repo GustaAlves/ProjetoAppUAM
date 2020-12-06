@@ -46,8 +46,9 @@ export class ProductService {
     this.produto[idx] = { ... produto };
     this.saveData();
   }
-  public deletar(produto:Produto){
-    this.produto.pop();
+  public deletar(produto:Produto, nome: string){
+    const idx = this.produto.findIndex(p => p.nome === nome);
+    produto[idx] = this.produto.splice(idx,1);
     this.saveData();
   }
 
