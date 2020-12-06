@@ -9,7 +9,9 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let p of produto" (click)="handleDeletar(p, p.nome)">
-  
+      <ion-thumbnail slot="start">
+        <img src={{p.photoItem}}>
+      </ion-thumbnail>
       <h2>{{p.nome}}</h2>
     
     </ion-item>
