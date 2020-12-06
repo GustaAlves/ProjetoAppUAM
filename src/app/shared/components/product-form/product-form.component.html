@@ -41,6 +41,8 @@
     <ion-label position="floating">Contato</ion-label>
     <ion-input [(ngModel)]="produto.contato" type="tel"></ion-input>
   </ion-item>
+  <ion-button (click)="getPhoto()" expand ="block">Adicionar foto do produto</ion-button>
+  <img [src]="photo">
   <ion-button (click)="this.added.emit()" expand="block">
     Adicionar Produto
   </ion-button>
