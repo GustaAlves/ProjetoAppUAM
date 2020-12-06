@@ -40,10 +40,6 @@ const routes: Routes = [
     path: 'excluir',
     loadChildren: () => import('./home/loja/excluir/excluir.module').then( m => m.ExcluirPageModule)
   },
-  {
-    path: 'confirmation-dialog',
-    loadChildren: () => import('./confirmation-dialog/confirmation-dialog.component').then( m => m.ConfirmationDialogComponent)
-  }
 ];
 
 ;
