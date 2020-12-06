@@ -61,20 +61,13 @@ export class ProductService {
 
     else{
       let produtosFiltrados: Produto[] = [];
-
-      // produtosFiltrados.push(this.produto.filter());
       
       this.produto.forEach( p => {
-        if(p.nome === nome){
+        if(p.nome.indexOf(nome) > -1){
           produtosFiltrados.push(p);
         }        
       });
-
-      // this.produto.forEach(p =>
-      // {
-      //   produtosFiltrados.push(this.find(nome));
-      // });
-
+      
       return produtosFiltrados;
     }
   }
