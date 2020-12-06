@@ -8,7 +8,7 @@ import { CameraResultType, Plugins } from "@capacitor/core";
   styleUrls: ['./product-form.component.scss'],
 })
 export class ProductFormComponent implements OnInit {
-  public photo: string;
+  
 
   @Input() produto: Produto;
   @Output() added = new EventEmitter();
@@ -19,7 +19,7 @@ export class ProductFormComponent implements OnInit {
     const photo = await Plugins.Camera.getPhoto({
     resultType: CameraResultType.DataUrl,
     });
-    this.photo = photo.dataUrl;
+    this.produto.photoItem = photo.dataUrl;
     }
     
 

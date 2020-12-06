@@ -1,8 +1,5 @@
 <ion-list>
-  <ion-item>
-    <ion-label position="floating">Imagem do Produto</ion-label>
-    <ion-input [(ngModel)]="produto.photoItem" type="text"></ion-input>
-  </ion-item>
+  
   <ion-item>
     <ion-label position="floating">Nome do Produto</ion-label>
     <ion-input [(ngModel)]="produto.nome" type="text"></ion-input>
@@ -46,7 +43,7 @@
     <ion-input [(ngModel)]="produto.contato" type="tel"></ion-input>
   </ion-item>
   <ion-button (click)="getPhoto()" expand ="block">Adicionar foto do produto</ion-button>
-  <img [src]="photo">
+  <img [src]="produto.photoItem">
   <ion-button (click)="this.added.emit()" expand="block">
     Adicionar Produto
   </ion-button>
