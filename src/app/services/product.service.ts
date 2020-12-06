@@ -63,7 +63,7 @@ export class ProductService {
       let produtosFiltrados: Produto[] = [];
       
       this.produto.forEach( p => {
-        if(p.nome.indexOf(nome) > -1){
+        if(p.nome.toLowerCase().indexOf(nome) > -1){
           produtosFiltrados.push(p);
         }        
       });
