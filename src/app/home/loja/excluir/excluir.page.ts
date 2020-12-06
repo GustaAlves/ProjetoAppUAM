@@ -32,19 +32,31 @@ export class ExcluirPage implements OnInit {
     contato : '',
   };
   
-    async presentAlert() {
+    async presentAlert(produto,nome) {
     const alert = await this.alertController.create({
-      header: 'Excluir item',
-      message: 'Item excluido com êxito',
-      buttons: ['OK']
+      header: 'Confirmação',
+      message: 'Tem certeza que deseja excluir o item? ',
+      buttons: [
+        {
+          text: 'Sim',
+          handler:()=>{
+            this.productService.deletar(produto, nome);
+          }
+        },
+          {
+          text: 'Não',
+          role: 'cancel'
+          }
+          ]
+      
     });
 
     await alert.present();}
   ngOnInit() {
   }
     public handleDeletar(produto, nome){
-      this.presentAlert();
-      this.productService.deletar(produto, nome);
+      this.presentAlert(produto, nome);
+
   }
 
 public produto = this.productService.all();
