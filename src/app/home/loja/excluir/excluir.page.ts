@@ -42,7 +42,7 @@ export class ExcluirPage implements OnInit {
     await alert.present();}
   ngOnInit() {
   }
-    public handleDeletar(produto,nome){
+    public handleDeletar(produto, nome){
       this.presentAlert();
       this.productService.deletar(produto, nome);
   }
